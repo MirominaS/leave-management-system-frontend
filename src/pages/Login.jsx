@@ -45,7 +45,8 @@ const Login = () => {
           ABC Company
         </h2>
         {error && (
-          <div className="mb-4 p-3 bg-red-50 text-red-600 text-xs font-bold rounded-lg border border-red-100 uppercase tracking-tighter">
+          <div className="mb-4 p-3 bg-red-50 text-red-600 
+            text-xs font-bold rounded-lg border border-red-100 uppercase tracking-tighter">
             {error}
           </div>
         )}
@@ -61,8 +62,10 @@ const Login = () => {
               type="email"
               id="email"   
               onChange={(e) => setEmail(e.target.value)}           
-              className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0AC4E0] focus:border-[#0AC4E0] outline-none transition-all bg-gray-50 text-[#0B2D72]"
-              placeholder="admin@abccompany.com"
+              className="w-full px-4 py-3 border border-gray-200 
+                rounded-xl focus:ring-2 focus:ring-[#0AC4E0] 
+                focus:border-[#0AC4E0] outline-none transition-all bg-gray-50 text-[#0B2D72]"
+              placeholder="abc@gmail.com"
               required
             />
           </div>
@@ -78,7 +81,9 @@ const Login = () => {
               type="password"
               id="password"
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0AC4E0] focus:border-[#0AC4E0] outline-none transition-all bg-gray-50 text-[#0B2D72]"
+              className="w-full px-4 py-3 border 
+                border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0AC4E0] 
+                focus:border-[#0AC4E0] outline-none transition-all bg-gray-50 text-[#0B2D72]"
               placeholder="••••••••"
               required
             />
@@ -87,7 +92,10 @@ const Login = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-[#0B2D72] text-white font-black py-4 px-4 rounded-xl hover:bg-[#0992C2] focus:ring-4 focus:ring-[#0AC4E0]/30 transition-all duration-300 shadow-lg uppercase tracking-widest text-sm"
+            className="w-full bg-[#0B2D72] text-white font-black 
+              py-4 px-4 rounded-xl hover:bg-[#0992C2] focus:ring-4 
+              focus:ring-[#0AC4E0]/30 transition-all duration-300 
+              shadow-lg uppercase tracking-widest text-sm"
           >
             {loading ? 'Authenticating...' : 'Login'}
           </button>
